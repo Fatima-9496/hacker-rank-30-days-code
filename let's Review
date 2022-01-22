@@ -1,0 +1,13 @@
+n=int(input())
+lste=[]
+lsto=[]
+for i in range(n):
+    s=input()
+    for i in range(len(s)):
+        if i%2==0:
+            lste.append(s[i])
+        elif i%2!=0:
+            lsto.append(s[i])
+    print("".join(lste),"".join(lsto))
+    lste.clear()
+    lsto.clear()
