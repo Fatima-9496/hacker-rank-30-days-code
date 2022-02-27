@@ -17,3 +17,21 @@ for j in range(0, num):
         print(name + "=" + str(phone))
     else:
         print("Not found")
+        
+  ##########################################
+  ##another solution
+num = int(input())
+data = {}
+
+for i in range(num):
+    x = input().split()
+    data[x[0]] = x[1]
+
+while True:
+    try:
+        NAME = input()
+        if NAME in data:
+            print(NAME, "=", data[NAME], sep="")
+        else: print("Not found")
+    except:
+        break
