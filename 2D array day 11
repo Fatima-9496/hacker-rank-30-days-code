@@ -1,16 +1,5 @@
+
 #!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-
-
-if __name__ == '__main__':
-
-   #!/bin/python3
 
 import math
 import os
@@ -25,9 +14,9 @@ if __name__ == '__main__':
     arr = []
 
     for _ in range(6):
-        arr.append(list(map(int, input().strip().split())))
+        arr.append(list(map(int, input().rstrip().split())))
     sum = 0
-    arr = []
+    myarr = []
     
     for l in range(0,4):
         for k in range(0,4):
@@ -37,7 +26,7 @@ if __name__ == '__main__':
                         continue
                     else:
                         sum += arr[i][j]
-            arr.append(sum)
+            myarr.append(sum)
             sum = 0
     
-    print(max(arr))
+    print(max(myarr))
